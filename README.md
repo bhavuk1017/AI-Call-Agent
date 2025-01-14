@@ -16,6 +16,7 @@ This project is an AI-powered calling agent developed specifically for sales pur
 	7.	Comprehensive Deployment: Includes a PPT and video demonstrating the system’s functionality.
 
 ## Usage
+![Alt text](https://github.com/user-attachments/assets/e035f70a-5475-43a6-b4d5-3843d009d317)
 
 Step 1: Update Recipient Number
 
