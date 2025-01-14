@@ -2,6 +2,8 @@
 
 This project is an AI-powered calling agent developed specifically for sales purposes. The agent uses Twilio for telephony services, Rasa for conversational AI, and an LLM (Large Language Model) as a fallback when Rasa cannot respond effectively. MongoDB is integrated as a database to store information about the conversations for future analysis.
 
+### [Tutorial and Presentation](https://drive.google.com/drive/folders/13hPMdORz6eg0soao2s_zqBuIleWQwj9M?usp=sharing)
+
 ## Features
 	1.	Sales-Focused Conversations: The agent is optimized to handle sales-related queries and interactions.
 	2.	Dynamic Conversation Handling:
