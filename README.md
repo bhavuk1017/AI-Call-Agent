@@ -96,19 +96,19 @@ Installation
 
 Ensure that your Rasa server is running:
 
-rasa run --enable-api
+```rasa run --enable-api```
 
 <ins>Step 5</ins>: Start Ngrok
 
 Start Ngrok to expose your local Flask server to the public internet:
 
-ngrok http 5000
+```ngrok http 5000```
 
 Copy the Ngrok URL and update it in the make_call() function within app.py.
 
 <ins>Step 6</ins>: Run the Flask Server
 
-python app.py
+```python app.py```
 
 
 Debugging
