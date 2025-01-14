@@ -1,0 +1,30 @@
+{
+    "products": [
+      {
+        "product_name": "Samsung Galaxy S21",
+        "price": 30000,
+        "brand": "Samsung"
+      },
+      {
+        "product_name": "Apple iPhone 13",
+        "price": 70000,
+        "brand": "Apple"
+      },
+      {
+        "product_name": "OnePlus 9",
+        "price": 40000,
+        "brand": "OnePlus"
+      },
+      {
+        "product_name": "Apple iPhone 16",
+        "price": 40000,
+        "brand": "Apple"
+      },
+      {
+        "product_name": "Apple iPhone 200",
+        "price": 30000,
+        "brand": "Apple"
+      }
+    ]
+  }
+  

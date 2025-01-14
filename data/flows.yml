@@ -1,0 +1,52 @@
+flows:
+  greeting:
+    description: "This flow simply greets the user and asks for the user's name"
+    steps:
+      - action: "utter_greet"
+      - link: "collect_user_preferences"
+
+  collect_user_preferences:
+    description: This flow collects the user's name, language preference, budget, and brand preference.
+    steps:
+      - collect: "name"
+        reset_after_flow_ends: false
+        description: "The name of the user."
+      - collect: "language"
+        description: "User's preferred language."
+      - collect: "budget"
+        description: "Asking the user for their budget."
+      - collect: "brand"
+        description: "Asking the user for their preferred brand."
+      - action: action_query_products
+      - link: "user_interest_check"
+
+  user_interest_check:
+    description: This flow checks if the user is interested in the products suggested.
+    steps:
+      - collect: "interested"
+        description: "Asking the user if they are interested in the suggested products. If the user says I am interested set the value to yes otherwise no."
+        next:
+          - if: slots.interested =="yes"
+            then:
+              - link: "finalize_purchase"
+          - else:
+              - link: "handle_objections"
+
+  finalize_purchase:
+    description: "This flow helps the user finalize their purchase."
+    steps:
+      - action: "utter_confirm_purchase"
+      - collect: "address"
+        description: "Asking for the user's delivery address."
+      - collect: "payment_method"
+        description: "Asking for the user's preferred payment method."
+      - action: "utter_thank_you"
+
+  handle_objections:
+    description: "This flow handles user objections and attempts to negotiate."
+    steps:
+      - action: "utter_thank_you_no_purchase"
+  
+
+    
+      

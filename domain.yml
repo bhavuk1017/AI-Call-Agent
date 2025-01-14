@@ -1,0 +1,61 @@
+version: "3.1"
+
+actions:
+  - action_query_products
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_llm
+  language:
+    type: text
+    mappings:
+      - type: from_llm
+  budget:
+    type: float
+    mappings:
+      - type: from_llm
+  brand:
+    type: text
+    mappings:
+      - type: from_llm
+  interested:
+      type: text
+      mappings:
+        - type: from_llm
+  address:
+        type: text
+        mappings:
+          - type: from_llm
+  payment_method:
+        type: text
+        mappings:
+          - type: from_llm
+
+
+responses:
+  utter_greet:
+    - text: "Hi, I am Anish.?"
+  utter_thank_you:
+    - text: "Thank you for visiting {name}! Thank you for your purchase!"
+  utter_ask_name:
+    - text: "What is your name?"
+  utter_ask_language:
+    - text: "A very warm welcome to Anish's room {name} ! Which language do you prefer?"
+  utter_ask_budget:
+    - text: "{name}, what is your budget?"
+  utter_ask_brand:
+    - text: "Which brand do you prefer?"
+  utter_ask_interested:
+    - text: "So, {name}, are you interested?"
+  utter_confirm_purchase:
+    - text: "Great! Let me help you finalize the purchase. Please provide your delivery address."
+  utter_ask_address:
+    - text: "{name} where would you like your product delivered?"
+  utter_ask_payment_method:
+    - text: "So how would you like to pay?"
+  utter_thank_you_no_purchase:
+    - text: "I am sorry to hear you did not like the product {name}! Thank you for your time. We hope to service you better next time."
+ 
