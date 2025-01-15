@@ -5,15 +5,16 @@ This project is an AI-powered calling agent developed specifically for sales pur
 ### [Tutorial and Presentation](https://drive.google.com/drive/folders/13hPMdORz6eg0soao2s_zqBuIleWQwj9M?usp=sharing)
 
 ## Features
-	1.	Sales-Focused Conversations: The agent is optimized to handle sales-related queries and interactions.
-	2.	Dynamic Conversation Handling:
-	    •	  Primary: Uses Rasa CALM for predefined conversational flows.
-	    •	  Fallback: Integrates with an LLM to provide intelligent responses when Rasa fails to understand user input.
-	3.	Conversation Logging: Stores all conversation data in MongoDB for analysis and tracking.
-	4.	Speech Recognition: Processes user speech during calls with Twilio’s speech-to-text capabilities.
-	5.	Interactive Call Flow: Allows for dynamic interactions with users, including handling multiple responses in a single call.
-	6.	Ngrok Integration: Exposes the Flask server to the public internet for Twilio webhook integration.
-	7.	Comprehensive Deployment: Includes a PPT and video demonstrating the system’s functionality.
+
+1.	Sales-Focused Conversations: The agent is optimized to handle sales-related queries and interactions.
+2.	Dynamic Conversation Handling:
+    •	  Primary: Uses Rasa CALM for predefined conversational flows.
+    •	  Fallback: Integrates with an LLM to provide intelligent responses when Rasa fails to understand user input.
+3.	Conversation Logging: Stores all conversation data in MongoDB for analysis and tracking.
+4.	Speech Recognition: Processes user speech during calls with Twilio’s speech-to-text capabilities.
+5.	Interactive Call Flow: Allows for dynamic interactions with users, including handling multiple responses in a single call.
+6.	Ngrok Integration: Exposes the Flask server to the public internet for Twilio webhook integration.
+7.	Comprehensive Deployment: Includes a PPT and video demonstrating the system’s functionality.
 
 ## Usage
 ![Alt text](https://github.com/user-attachments/assets/e035f70a-5475-43a6-b4d5-3843d009d317)
