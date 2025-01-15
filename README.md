@@ -7,7 +7,7 @@ This project is an AI-powered calling agent developed specifically for sales pur
 ## Features
 	1.	Sales-Focused Conversations: The agent is optimized to handle sales-related queries and interactions.
 	2.	Dynamic Conversation Handling:
-	    •	  Primary: Uses Rasa NLU for predefined conversational flows.
+	    •	  Primary: Uses Rasa CALM for predefined conversational flows.
 	    •	  Fallback: Integrates with an LLM to provide intelligent responses when Rasa fails to understand user input.
 	3.	Conversation Logging: Stores all conversation data in MongoDB for analysis and tracking.
 	4.	Speech Recognition: Processes user speech during calls with Twilio’s speech-to-text capabilities.
