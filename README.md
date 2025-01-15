@@ -27,53 +27,69 @@ Step 2: Make a Call
 
 The Flask server will automatically initiate a call to the recipient once it starts. During the call, the agent will:
 
-	•	Use Rasa for predefined sales conversations.
-	•	Fall back to an LLM for unrecognized inputs.
-	•	Store conversation data in MongoDB for future analysis.
+•	Use Rasa for predefined sales conversations.
 
-Conversation Logging
+•	Fall back to an LLM for unrecognized inputs.
+
+•	Store conversation data in MongoDB for future analysis.
+
+**Conversation Logging**
 
 MongoDB is used to store the following details:
 
-	•	Timestamp of the conversation
-	•	User inputs
-	•	Agent responses
-	•	Call status (e.g., completed, failed)
+•	Timestamp of the conversation
+
+•	User inputs
+
+•	Agent responses
+
+•	Call status (e.g., completed, failed)
 
 This data can be used for:
 
-	•	Sales performance analysis
-	•	Conversation quality improvement
-	•	Customer insights
+•	Sales performance analysis
 
-Supporting Materials
+•	Conversation quality improvement
 
-	•	PPT Presentation: Link to PPT
-	•	Demonstration Video: Link to Video
+•	Customer insights
+
+**Supporting Materials**
+
+•	PPT Presentation: Link to PPT
+
+•	Demonstration Video: Link to Video
 
 
 
 ## Future Improvements
 
-	•	Enhance sales-specific responses by training the Rasa model further.
-	•	Add analytics for stored MongoDB conversation data.
-	•	Deploy the solution to a production environment with high availability and scalability.
-	•	Optimize fallback logic between Rasa and the LLM.
+•	Enhance sales-specific responses by training the Rasa model further.
+
+•	Add analytics for stored MongoDB conversation data.
+
+•	Deploy the solution to a production environment with high availability and scalability.
+
+•	Optimize fallback logic between Rasa and the LLM.
 
 
 
 Requirements
 
-	•	Python 3.8+
-	•	Twilio Account with an active phone number
-	•	Ngrok for public URL exposure
-	•	Rasa installed and running locally
-	•	MongoDB instance for conversation data storage
-	•	Flask framework
+•	Python 3.8+
+
+•	Twilio Account with an active phone number
+
+•	Ngrok for public URL exposure
+
+•	Rasa installed and running locally
+
+•	MongoDB instance for conversation data storage
+
+•	Flask framework
 
 
 
-Installation
+**Installation**
 
 <ins>Step 1</ins>: Clone the Repository
 
@@ -86,7 +102,7 @@ Installation
 
 <ins>Step 3</ins>: Configure Environment Variables
 
-	Create a .env file in the root directory and set the following environment variables:
+Create a .env file in the root directory and set the following environment variables:
 
 	TWILIO_ACCOUNT_SID=your_twilio_account_sid
 	TWILIO_AUTH_TOKEN=your_twilio_auth_token
@@ -118,16 +134,27 @@ Copy the Ngrok URL and update it in the make_call() function within app.py.
 Debugging
 
 To debug issues, check the following:
-	1.	Rasa Logs: Ensure Rasa is running and check its logs for errors.
-	2.	Twilio Console: Verify the call status and logs in your Twilio console.
-	3.	Flask Terminal Logs: The Flask app logs all interactions, including the messages sent to and received from Rasa and the LLM.
-	4.	MongoDB Logs: Check if the conversation data is being logged correctly in your database.
+
+1.	Rasa Logs: Ensure Rasa is running and check its logs for errors.
+   
+	
+ 2.	Twilio Console: Verify the call status and logs in your Twilio console.
+	
+ 3.	Flask Terminal Logs: The Flask app logs all interactions, including the messages sent to and received from Rasa and the LLM.
+	
+ 4.	MongoDB Logs: Check if the conversation data is being logged correctly in your database.
 
 
-Acknowledgments
-	•	Twilio for telephony services.
-	•	Rasa for conversational AI.
-	•	MongoDB for data storage.
-	•	Ngrok for secure public exposure of the local server.
-	•	Large Language Models for intelligent fallback responses.
+<ins>**Acknowledgments**</ins>
+
+	
+ •	Twilio for telephony services.
+	
+ •	Rasa for conversational AI.
+	
+ •	MongoDB for data storage.
+	
+ •	Ngrok for secure public exposure of the local server.
+	
+ •	Large Language Models for intelligent fallback responses.
 
